@@ -6,11 +6,15 @@ module.exports = {
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
-        libraryTarget: "umd"
+        libraryTarget: "umd",
+        publicPath: '/'
     },
     devtool: "inline-source-map",
     devServer: {
         contentBase: "./dist"
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     resolve: {
         alias: {

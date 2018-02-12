@@ -1,8 +1,10 @@
 import {combineReducers} from "redux";
-import todos from "src/js/reducers/todosReducer";
-import visibilityFilter from "src/js/reducers/visibilityReducer";
+import images from "src/js/reducers/imagesReducer";
+import query from "src/js/reducers/queryReducer";
+import selectedImageId from "src/js/reducers/selectedImageReducer";
 
 export default combineReducers({
-    todos,
-    visibilityFilter
+    images,
+    query,
+    selectedImageId
 });
